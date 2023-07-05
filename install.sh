@@ -41,7 +41,7 @@ echo "> ------------------------------------------ INSTALANDO E CONFIGURANDO O E
 #epoptes-client -c
 
 #echo "------------------------------------------ CRIANDO UM USUÁRIO ADMINISTRADOR PARA O SISTEMA"
-#sudo adduser administrador
+sudo adduser administrador
 
 echo "------------------------------------------ MODIFICANDO CONFIGURAÇÕES DE ENERGIA"
 '
