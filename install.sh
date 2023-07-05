@@ -46,6 +46,6 @@ echo "> ------------------------------------------ INSTALANDO E CONFIGURANDO O E
 echo "------------------------------------------ MODIFICANDO CONFIGURAÇÕES DE ENERGIA"
 '
 
-#xfce4-power-manager-settings
-#xfce4-screensaver-preferences
-#users-admin
+xfce4-power-manager-settings
+xfce4-screensaver-preferences
+users-admin
