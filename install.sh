@@ -39,7 +39,7 @@ echo "------------------------------------------ ATUALIZANDO OS PACOTES --------
 apt update
 
 echo "> ------------------------------------------ INSTALANDO E CONFIGURANDO O EPOPTES ------------------------------------------ "
-apt install epoptes -y
+apt install epoptes-client -y
 nano /etc/default/epoptes-client
 epoptes-client -c
 
