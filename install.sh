@@ -39,9 +39,9 @@ echo "------------------------------------------ ATUALIZANDO OS PACOTES --------
 apt update
 
 echo "> ------------------------------------------ INSTALANDO E CONFIGURANDO O EPOPTES ------------------------------------------ "
-#apt install epoptes -y
-#nano /etc/default/epoptes-client
-#epoptes-client -c
+apt install epoptes -y
+nano /etc/default/epoptes-client
+epoptes-client -c
 
 echo "> ------------------------------------------ REMOVENDO O WINE DO SISTEMA ------------------------------------------ "
 apt remove --purge wine
