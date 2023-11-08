@@ -61,7 +61,7 @@ arduino
 
 sudo add-apt-repository ppa:damien-moore/codeblocks-stable
 sudo apt-get update
-sudo apt-get install codeblocks
+sudo apt-get install codeblocks -y
 
 rm /home/aluno/labtools
 
