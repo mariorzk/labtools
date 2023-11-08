@@ -57,13 +57,17 @@ wget https://downloads.arduino.cc/arduino-1.8.16-linux64.tar.xz -O arduino-versi
 tar xf arduino-version.tar.xz
 cd arduino-1.8.16
 ./install.sh
+cd.. 
+rm arduino-1.8.16
+rm arduino-version.tar.xz
 arduino
 
 sudo add-apt-repository ppa:damien-moore/codeblocks-stable
 sudo apt-get update
 sudo apt-get install codeblocks -y
+codeblocks
 
-rm /home/aluno/labtools
+rm labtools
 
 '
 
