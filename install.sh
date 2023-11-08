@@ -29,7 +29,7 @@ echo "> ------------------------ Adicionando chaves de verificação da integrid
 echo "> --------------------------------------- Adionando repositório ------------------------------------------------------"
 #sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 #apt update
-#sudo apt install code -y
+#sudo apt install code -y/home/aluno/
 
 echo "> ------------------------------------------ INSTALANDO PIP DO PYTHON ------------------------------------------"
 #apt update
