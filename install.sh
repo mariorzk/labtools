@@ -55,7 +55,7 @@ echo "------------------------------------------ MODIFICANDO CONFIGURAÇÕES DE 
 echo "------------------------------------------ INSTALANDO ARDUINO ------------------------------------------ "
 wget https://downloads.arduino.cc/arduino-1.8.16-linux64.tar.xz -O arduino-version.tar.xz
 tar xf arduino-version.tar.xz
-cd arduino-version
+cd arduino-1.8.16
 ./install.sh
 arduino
 
