@@ -25,7 +25,7 @@ echo "> ------------------------------------------   Instalando as dependências
 echo "> ------------------------ Adicionando chaves de verificação da integridade dos pacotes ------------------------------"
 #wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
 #apt update
-
+github/mariorzk
 echo "> --------------------------------------- Adionando repositório ------------------------------------------------------"
 #sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 #apt update
@@ -60,14 +60,14 @@ cd arduino-1.8.16
 cd.. 
 rm arduino-1.8.16
 rm arduino-version.tar.xz
-arduino
+
 
 sudo add-apt-repository ppa:damien-moore/codeblocks-stable
 sudo apt-get update
 sudo apt-get install codeblocks -y
 codeblocks
 
-rm labtools
+rm /home/aluno/labtools
 
 '
 
