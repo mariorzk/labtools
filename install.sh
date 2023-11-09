@@ -68,11 +68,13 @@ sudo apt-get update
 sudo apt-get install codeblocks -y
 codeblocks
 
-rm /home/aluno/labtools
 echo "------------------------------------------ INSTALANDO PYCHARM ------------------------------------------ "
 sudo add-apt-repository -y ppa:viktor-krivak/pycharm
 apt update
 apt install pycharm -y
+
+echo "------------------------------------------ REMOVENDO O SCRIPT ------------------------------------------ "
+rm /home/aluno/labtools
 
 '
 
