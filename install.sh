@@ -39,7 +39,7 @@ apt install python3 -y pip -y
 #apt update
 
 echo "------------------------------------------ INSTALANDO E CONFIGURANDO O EPOPTES ------------------------------------------ "
-#pt install epoptes-client -y
+apt install epoptes-client -y
 nano /etc/default/epoptes-client
 epoptes-client -c
 
