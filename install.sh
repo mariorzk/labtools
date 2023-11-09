@@ -66,7 +66,7 @@ echo "------------------------------------------ INSTALANDO CODEBLOCKS ---------
 sudo add-apt-repository ppa:damien-moore/codeblocks-stable
 sudo apt-get update
 sudo apt-get install codeblocks -y
-codeblocks
+#codeblocks
 
 echo "------------------------------------------ INSTALANDO PYCHARM ------------------------------------------ "
 sudo add-apt-repository -y ppa:viktor-krivak/pycharm
