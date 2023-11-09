@@ -17,19 +17,19 @@ dpkg --configure -a
 echo "------------------------------------------ Atualizando os navegadores Chrome e Firefox"
 apt install google-chrome-stable -y firefox firefox-locale-pt
 
-#echo "------------------------------------------ INSTALANDO VISUAL STUDIO CODE -------------------------------------------"
+echo "------------------------------------------ INSTALANDO VISUAL STUDIO CODE -------------------------------------------"
 
-#echo "------------------------------------------   Instalando as dependências   -----------------------------------------"
-#sudo apt install software-properties-common apt-transport-https wget -y
+echo "------------------------------------------   Instalando as dependências   -----------------------------------------"
+sudo apt install software-properties-common apt-transport-https wget -y
 
-#echo "------------------------ Adicionando chaves de verificação da integridade dos pacotes ------------------------------"
-#wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
-#apt update
+echo "------------------------ Adicionando chaves de verificação da integridade dos pacotes ------------------------------"
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+apt update
 
-#echo "--------------------------------------- Adionando repositório ------------------------------------------------------"
-#sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
-#apt update
-#sudo apt install code -y/home/aluno/
+echo "--------------------------------------- Adionando repositório ------------------------------------------------------"
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+apt update
+sudo apt install code -y
 
 echo ">------------------------------------------ INSTALANDO PYTHON 3 E PIP ------------------------------------------"
 #apt update
@@ -38,10 +38,10 @@ apt install python3 -y pip -y
 #echo "------------------------------------------ ATUALIZANDO OS PACOTES ------------------------------------------ "
 #apt update
 
-#echo "------------------------------------------ INSTALANDO E CONFIGURANDO O EPOPTES ------------------------------------------ "
-#apt install epoptes-client -y
-#nano /etc/default/epoptes-client
-#epoptes-client -c
+echo "------------------------------------------ INSTALANDO E CONFIGURANDO O EPOPTES ------------------------------------------ "
+#pt install epoptes-client -y
+nano /etc/default/epoptes-client
+epoptes-client -c
 
 #echo "------------------------------------------ REMOVENDO O WINE DO SISTEMA ------------------------------------------ "
 #apt remove --purge wine
@@ -52,26 +52,27 @@ apt install python3 -y pip -y
 #echo "------------------------------------------ MODIFICANDO CONFIGURAÇÕES DE ENERGIA ------------------------------------------ "
 
 
-echo "------------------------------------------ INSTALANDO ARDUINO IDE ------------------------------------------ "
-wget https://downloads.arduino.cc/arduino-1.8.16-linux64.tar.xz -O arduino-version.tar.xz
-tar xf arduino-version.tar.xz
-cd arduino-1.8.16
-./install.sh
-cd.. 
-rm arduino-1.8.16
-rm arduino-version.tar.xz
-chmod -R 777 /root/arduino-*
+#echo "------------------------------------------ INSTALANDO ARDUINO IDE ------------------------------------------ "
+#wget https://downloads.arduino.cc/arduino-1.8.16-linux64.tar.xz -O arduino-version.tar.xz
+#tar xf arduino-version.tar.xz
+#cd arduino-1.8.16
+#./install.sh
+#cd.. 
+#rm arduino-1.8.16
+#rm arduino-version.tar.xz
+#chmod -R 777 /root/arduino-*
+#mv /root/arduino-* /home/aluno/
 
-echo "------------------------------------------ INSTALANDO CODEBLOCKS ------------------------------------------ "
-sudo add-apt-repository ppa:damien-moore/codeblocks-stable
-sudo apt-get update
-sudo apt-get install codeblocks -y
+#echo "------------------------------------------ INSTALANDO CODEBLOCKS ------------------------------------------ "
+#sudo add-apt-repository ppa:damien-moore/codeblocks-stable
+#sudo apt-get update
+#sudo apt-get install codeblocks -y
 #codeblocks
 
-echo "------------------------------------------ INSTALANDO PYCHARM ------------------------------------------ "
-sudo add-apt-repository -y ppa:viktor-krivak/pycharm
-apt update
-apt install pycharm -y
+#echo "------------------------------------------ INSTALANDO PYCHARM ------------------------------------------ "
+#sudo add-apt-repository -y ppa:viktor-krivak/pycharm
+#apt update
+#apt install pycharm -y
 
 echo "------------------------------------------ REMOVENDO O SCRIPT ------------------------------------------ "
 rm /home/aluno/labtools
