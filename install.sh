@@ -20,31 +20,31 @@ apt install google-chrome-stable -y firefox firefox-locale-pt
 echo "------------------------------------------ INSTALANDO VISUAL STUDIO CODE -------------------------------------------"
 
 echo "------------------------------------------   Instalando as dependências   -----------------------------------------"
-#sudo apt install software-properties-common apt-transport-https wget -y
+sudo apt install software-properties-common apt-transport-https wget -y
 
 echo "------------------------ Adicionando chaves de verificação da integridade dos pacotes ------------------------------"
-#wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
-#apt update
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+apt update
 
 echo "--------------------------------------- Adionando repositório ------------------------------------------------------"
-#sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
-#apt update
-#sudo apt install code -y
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+apt update
+sudo apt install code -y
 
 echo ">------------------------------------------ INSTALANDO PYTHON 3 E PIP ------------------------------------------"
 #apt update
-apt install python3 -y pip -y
+#apt install python3 -y pip -y
 
 #echo "------------------------------------------ ATUALIZANDO OS PACOTES ------------------------------------------ "
-#apt update
+apt update
 
 echo "------------------------------------------ INSTALANDO E CONFIGURANDO O EPOPTES ------------------------------------------ "
-#apt install epoptes-client -y
-#nano /etc/default/epoptes-client
-#epoptes-client -c
+apt install epoptes-client -y
+nano /etc/default/epoptes-client
+epoptes-client -c
 
-#echo "------------------------------------------ REMOVENDO O WINE DO SISTEMA ------------------------------------------ "
-#apt remove --purge wine
+echo "------------------------------------------ REMOVENDO O WINE DO SISTEMA ------------------------------------------ "
+apt remove --purge wine
 
 #echo "------------------------------------------ CRIANDO UM USUÁRIO ADMINISTRADOR PARA O SISTEMA ------------------------------------------ "
 #sudo adduser administrador
@@ -74,6 +74,8 @@ echo "------------------------------------------ INSTALANDO E CONFIGURANDO O EPO
 #apt update
 #apt install pycharm -y
 
+users-admin
+
 echo "------------------------------------------ REMOVENDO O SCRIPT ------------------------------------------ "
 rm /home/aluno/labtools
 
@@ -81,4 +83,3 @@ rm /home/aluno/labtools
 
 #xfce4-power-manager-settings
 #xfce4-screensaver-preferences
-#users-admin
