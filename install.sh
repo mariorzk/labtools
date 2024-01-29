@@ -74,7 +74,7 @@ apt remove --purge wine
 #apt update
 #apt install pycharm -y
 
-users-admin
+#users-admin
 
 echo "------------------------------------------ REMOVENDO O SCRIPT ------------------------------------------ "
 rm /home/aluno/labtools
