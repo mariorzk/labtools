@@ -74,12 +74,11 @@ apt remove --purge wine
 #apt update
 #apt install pycharm -y
 
-#users-admin
 
 echo "------------------------------------------ REMOVENDO O SCRIPT ------------------------------------------ "
 rm /home/aluno/labtools
 
 '
-
+users-admin
 #xfce4-power-manager-settings
 #xfce4-screensaver-preferences
