@@ -43,10 +43,10 @@ echo "****** REMOVENDO O WINE DO SISTEMA ****** "
 apt remove --purge wine wine64
 
 echo "****** CRIANDO UM USUÁRIO ADMINISTRADOR PARA O SISTEMA ****** "
-sudo useradd -m administrador
+#sudo useradd -m administrador
 
 echo "****** DEFININDO SENHA PARA O USUARIO ADMINISTRADOR ****** "
-passwd administrador
+#passwd administrador
 
 #echo "****** MODIFICANDO CONFIGURAÇÕES DE ENERGIA ****** "
 
@@ -73,9 +73,13 @@ passwd administrador
 #apt update
 #apt install pycharm -y
 
+cp -r /home/administrador/.config/ /home/aluno/
+
+
+
 echo "****** REMOVENDO O SCRIPT ****** "
 rm /home/aluno/labtools
 '
-users-admin
+#users-admin
 #xfce4-power-manager-settings
 #xfce4-screensaver-preferences
