@@ -43,10 +43,14 @@ echo "****** REMOVENDO O WINE DO SISTEMA ****** "
 apt remove --purge wine wine64
 
 echo "****** CRIANDO UM USUÁRIO ADMINISTRADOR PARA O SISTEMA ****** "
-sudo useradd -m administrador
+#sudo useradd -m administrador
+sudo useradd -m aluno
+
 
 echo "****** DEFININDO SENHA PARA O USUARIO ADMINISTRADOR ****** "
-passwd administrador
+#passwd administrador
+passwd aluno
+
 
 #echo "****** MODIFICANDO CONFIGURAÇÕES DE ENERGIA ****** "
 
