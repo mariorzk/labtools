@@ -28,39 +28,39 @@ apt update
 sudo apt install code -y
 
 echo "****** INSTALANDO PYTHON 3 E PIP ******"
-#apt update
-#apt install python3 -y pip -y
+apt update
+apt install python3 -y pip -y
 
 #echo "****** ATUALIZANDO OS PACOTES ****** "
 apt update
 
 echo "****** INSTALANDO E CONFIGURANDO O EPOPTES ****** "
-apt install epoptes-client -y
-nano /etc/default/epoptes-client
-epoptes-client -c
+#apt install epoptes-client -y
+#nano /etc/default/epoptes-client
+#epoptes-client -c
 
 echo "****** REMOVENDO O WINE DO SISTEMA ****** "
 apt remove --purge wine wine64
 
 echo "****** CRIANDO UM USUÁRIO ADMINISTRADOR PARA O SISTEMA ****** "
-#sudo useradd -m administrador
+sudo useradd -m administrador
 
 echo "****** DEFININDO SENHA PARA O USUARIO ADMINISTRADOR ****** "
-#passwd administrador
+passwd administrador
 
 #echo "****** MODIFICANDO CONFIGURAÇÕES DE ENERGIA ****** "
 
 
 #echo "****** INSTALANDO ARDUINO IDE ****** "
-#wget https://downloads.arduino.cc/arduino-1.8.16-linux64.tar.xz -O arduino-version.tar.xz
-#tar xf arduino-version.tar.xz
-#cd arduino-1.8.16
-#./install.sh
-#cd.. 
-#rm arduino-1.8.16
-#rm arduino-version.tar.xz
-#chmod -R 777 /root/arduino-*
-#mv /root/arduino-* /home/aluno/
+wget https://downloads.arduino.cc/arduino-1.8.16-linux64.tar.xz -O arduino-version.tar.xz
+tar xf arduino-version.tar.xz
+cd arduino-1.8.16
+./install.sh
+cd.. 
+rm arduino-1.8.16
+rm arduino-version.tar.xz
+chmod -R 777 /root/arduino-*
+mv /root/arduino-* /home/aluno/
 
 #echo "****** INSTALANDO CODEBLOCKS ****** "
 #sudo add-apt-repository ppa:damien-moore/codeblocks-stable
@@ -75,11 +75,15 @@ echo "****** DEFININDO SENHA PARA O USUARIO ADMINISTRADOR ****** "
 
 cp -r /home/administrador/.config/ /home/aluno/
 
+#INSTALANDO AUDACITY
+sudo add-apt-repository ppa:audacity-team/daily
+sudo apt-get update
+sudo apt-get install audacity
 
 
 echo "****** REMOVENDO O SCRIPT ****** "
 rm /home/aluno/labtools
 '
-#users-admin
-#xfce4-power-manager-settings
-#xfce4-screensaver-preferences
+users-admin
+xfce4-power-manager-settings
+xfce4-screensaver-preferences
