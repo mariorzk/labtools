@@ -6,10 +6,10 @@ A lista de programas será instalada em breve, mas antes de prosseguir, realize 
 pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY bash -c '
 
 echo "****** ATUALIZANDO OS PACOTES E REPARANDO ****** "
-wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
-apt update
-apt remove --purge samba-common-bin -y
-dpkg --configure -a
+#wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
+#apt update
+#apt remove --purge samba-common-bin -y
+#dpkg --configure -a
 
 #echo "****** INSTALANDO VIRTUALBOX ****** "
 
@@ -22,10 +22,10 @@ apt install google-chrome-stable -y firefox firefox-locale-pt
 echo "****** INSTALANDO VISUAL STUDIO CODE ******"
 
 sudo apt install software-properties-common apt-transport-https wget -y
-wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
-apt update
-sudo apt install code -y
+#wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+#sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+#apt update
+#sudo apt install code -y
 
 echo "****** INSTALANDO PYTHON 3 E PIP ******"
 apt update
@@ -56,15 +56,15 @@ passwd aluno
 
 
 #echo "****** INSTALANDO ARDUINO IDE ****** "
-wget https://downloads.arduino.cc/arduino-1.8.16-linux64.tar.xz -O arduino-version.tar.xz
-tar xf arduino-version.tar.xz
-cd arduino-1.8.16
-./install.sh
-cd.. 
-rm arduino-1.8.16
-rm arduino-version.tar.xz
-chmod -R 777 /root/arduino-*
-mv /root/arduino-* /home/aluno/
+#wget https://downloads.arduino.cc/arduino-1.8.16-linux64.tar.xz -O arduino-version.tar.xz
+#tar xf arduino-version.tar.xz
+#cd arduino-1.8.16
+#./install.sh
+#cd.. 
+#rm arduino-1.8.16
+#rm arduino-version.tar.xz
+#chmod -R 777 /root/arduino-*
+#mv /root/arduino-* /home/aluno/
 
 #echo "****** INSTALANDO CODEBLOCKS ****** "
 #sudo add-apt-repository ppa:damien-moore/codeblocks-stable
@@ -88,6 +88,6 @@ sudo apt-get install audacity
 echo "****** REMOVENDO O SCRIPT ****** "
 rm /home/aluno/labtools
 '
-users-admin
-xfce4-power-manager-settings
-xfce4-screensaver-preferences
+#users-admin
+#xfce4-power-manager-settings
+#xfce4-screensaver-preferences
