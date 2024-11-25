@@ -21,7 +21,7 @@ apt install google-chrome-stable -y firefox firefox-locale-pt
 
 echo "****** INSTALANDO VISUAL STUDIO CODE ******"
 
-sudo apt install software-properties-common apt-transport-https wget -y
+#sudo apt install software-properties-common apt-transport-https wget -y
 #wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
 #sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 #apt update
@@ -44,12 +44,12 @@ apt remove --purge wine wine64
 
 echo "****** CRIANDO UM USUÁRIO ADMINISTRADOR PARA O SISTEMA ****** "
 #sudo useradd -m administrador
-sudo useradd -m aluno
+#sudo useradd -m aluno
 
 
 echo "****** DEFININDO SENHA PARA O USUARIO ADMINISTRADOR ****** "
 #passwd administrador
-passwd aluno
+#passwd aluno
 
 
 #echo "****** MODIFICANDO CONFIGURAÇÕES DE ENERGIA ****** "
@@ -77,7 +77,7 @@ passwd aluno
 #apt update
 #apt install pycharm -y
 
-cp -r /home/administrador/.config/ /home/aluno/
+#cp -r /home/administrador/.config/ /home/aluno/
 
 #INSTALANDO AUDACITY
 sudo add-apt-repository ppa:audacity-team/daily
