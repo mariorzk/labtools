@@ -84,6 +84,10 @@ sudo add-apt-repository ppa:audacity-team/daily
 sudo apt-get update
 sudo apt-get install audacity
 
+Instalando EPOPTES
+apt install epoptes-client
+nano /etc/default/epoptes-client
+epoptes-client -c
 
 echo "****** REMOVENDO O SCRIPT ****** "
 rm /home/aluno/labtools
