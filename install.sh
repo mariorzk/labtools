@@ -6,10 +6,10 @@ A lista de programas será instalada em breve, mas antes de prosseguir, realize 
 pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY bash -c '
 
 echo "****** ATUALIZANDO OS PACOTES E REPARANDO ****** "
-#wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
-#apt update
-#apt remove --purge samba-common-bin -y
-#dpkg --configure -a
+wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
+apt update
+apt remove --purge samba-common-bin libpam-mount -y
+dpkg --configure -a
 
 #echo "****** INSTALANDO VIRTUALBOX ****** "
 
@@ -21,18 +21,18 @@ apt install google-chrome-stable -y firefox firefox-locale-pt
 
 echo "****** INSTALANDO VISUAL STUDIO CODE ******"
 
-#sudo apt install software-properties-common apt-transport-https wget -y
-#wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
-#sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
-#apt update
-#sudo apt install code -y
+sudo apt install software-properties-common apt-transport-https wget -y
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+apt update
+sudo apt install code -y
 
 echo "****** INSTALANDO PYTHON 3 E PIP ******"
-apt update
-apt install python3 -y pip -y
+#apt update
+#apt install python3 -y pip -y
 
 #echo "****** ATUALIZANDO OS PACOTES ****** "
-apt update
+#apt update
 
 echo "****** INSTALANDO E CONFIGURANDO O EPOPTES ****** "
 #apt install epoptes-client -y
@@ -40,10 +40,10 @@ echo "****** INSTALANDO E CONFIGURANDO O EPOPTES ****** "
 #epoptes-client -c
 
 echo "****** REMOVENDO O WINE DO SISTEMA ****** "
-apt remove --purge wine wine64
+apt remove --purge wine-stable -y
 
 echo "****** CRIANDO UM USUÁRIO ADMINISTRADOR PARA O SISTEMA ****** "
-#sudo useradd -m administrador
+adduser administrador
 #sudo useradd -m aluno
 
 
@@ -80,18 +80,18 @@ echo "****** DEFININDO SENHA PARA O USUARIO ADMINISTRADOR ****** "
 #cp -r /home/administrador/.config/ /home/aluno/
 
 #INSTALANDO AUDACITY
-sudo add-apt-repository ppa:audacity-team/daily
-sudo apt-get update
-sudo apt-get install audacity
+#sudo add-apt-repository ppa:audacity-team/daily
+#sudo apt-get update
+#sudo apt-get install audacity
 
 Instalando EPOPTES
-apt install epoptes-client
-nano /etc/default/epoptes-client
-epoptes-client -c
+#apt install epoptes-client
+#nano /etc/default/epoptes-client
+#epoptes-client -c
 
 echo "****** REMOVENDO O SCRIPT ****** "
 rm /home/aluno/labtools
 '
-#users-admin
+users-admin
 #xfce4-power-manager-settings
 #xfce4-screensaver-preferences
